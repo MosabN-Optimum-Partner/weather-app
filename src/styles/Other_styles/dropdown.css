@@ -1,8 +1,7 @@
 @import url(variables.css);
 
 .unit-list {
-  /* border-radius: 16px !important; */
-  border: 2px solid var(--Neutral-600);
+  border: 0.125rem solid var(--Neutral-600);
 
   button {
     width: 100%;
@@ -13,14 +12,14 @@
     margin-bottom: 0.5rem;
   }
   background-color: var(--Neutral-800);
-  width: 250px;
+  width: 15.625rem;
   right: 0;
-  top: 50px;
+  top: 3.125rem;
   padding: 1rem;
   z-index: 11;
   border-radius: var(--border-raduis);
   .drop-label {
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--Neutral-300);
     background-color: unset !important;
     margin-bottom: 0 !important;
@@ -41,12 +40,12 @@
     display: flex;
     justify-content: space-between;
     padding: 0.75rem;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-bottom: 0.5rem;
     border-radius: var(--border-raduis);
   }
   .seperator {
-    border: 0.5px solid var(--Neutral-600);
+    border: 0.0313rem solid var(--Neutral-600);
   }
 }
 .selected {

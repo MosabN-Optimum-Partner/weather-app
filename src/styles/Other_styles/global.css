@@ -16,7 +16,7 @@ p {
 }
 
 body {
-  min-width: 320px;
+  min-width: 20rem;
   background-color: var(--Neutral-900);
   min-height: 100svh;
   padding: 0.5rem min(8rem, 5%);

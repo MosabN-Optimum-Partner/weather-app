@@ -37,7 +37,7 @@ function getWeatherIcon(code: number): string {
 }
 
 searchBtn.addEventListener("click", () => handleSearch());
-async function handleSearch() {
+export async function handleSearch() {
   console.log("click");
 
   const { Precipitation, Temperature, Wind } = JSON.parse(

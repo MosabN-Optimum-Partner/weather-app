@@ -1,3 +1,4 @@
+import { handleSearch } from "./render.js";
 const defaultSettings = {
     Temperature: "Celsius",
     Wind: "kmh",
@@ -52,6 +53,7 @@ window.addEventListener("click", (e) => {
                     [inputName]: value.toLowerCase(),
                 };
                 localStorage.setItem("userPreferenece", JSON.stringify(userPreferenece));
+                handleSearch();
             }
         }
         const changeToImperial = isDropdown.querySelector("button");

@@ -27,7 +27,7 @@ function getWeatherIcon(code) {
     return "icon-overcast.svg";
 }
 searchBtn.addEventListener("click", () => handleSearch());
-async function handleSearch() {
+export async function handleSearch() {
     console.log("click");
     const { Precipitation, Temperature, Wind } = JSON.parse(localStorage.getItem("userPreferenece"));
     const citySearchBar = document.querySelector(".search-bar");

@@ -8,11 +8,11 @@ nav {
   justify-content: space-between !important;
   padding: 0rem 0;
   & > img {
-    width: 150px;
+    width: 9.375rem;
   }
 }
 
 .unit {
   padding: 0.5rem 0.5rem;
-  border-radius: 8px !important;
+  border-radius: 0.5rem !important;
 }

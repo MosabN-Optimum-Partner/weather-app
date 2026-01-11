@@ -1,3 +1,5 @@
+import { handleSearch } from "./render.js";
+
 export interface preferences {
   Temperature: "Celsius" | "Fahrenheit";
   Wind: "kmh" | "mph";
@@ -71,6 +73,7 @@ window.addEventListener("click", (e: MouseEvent) => {
           "userPreferenece",
           JSON.stringify(userPreferenece)
         );
+        handleSearch();
       }
     }
     const changeToImperial = isDropdown.querySelector("button");
