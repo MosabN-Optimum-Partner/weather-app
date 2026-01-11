@@ -1,0 +1,64 @@
+/* ============================/ Flex \============================ */
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.uflex {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+/* ============================\ Flex /============================ */
+
+/* ============================/ Grid \============================ */
+.grid {
+  display: grid;
+  justify-content: center;
+}
+
+.columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.columns-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+/* ============================\ Grid /============================ */
+
+/* ============================/ Gap & padding \============================ */
+.gap-0-5 {
+  gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+
+.padding-1 {
+  padding: 1rem;
+}
+.padding-2 {
+  padding: 2rem;
+}
+.padding-3 {
+  padding: 3rem;
+}
+.padding-4 {
+  padding: 4rem;
+}
+
+/* ============================\ Gap & padding /============================ */
+
+/* ============================/ Sizing \============================ */
+.max-width {
+  max-width: 90rem;
+}
+/* ============================\ Sizing /============================ */

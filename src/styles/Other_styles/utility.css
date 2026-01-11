@@ -1,0 +1,49 @@
+@import url(variables.css);
+
+.bg-900 {
+  background-color: var(--Neutral-900);
+}
+.bg-800 {
+  background-color: var(--Neutral-800);
+}
+.bg-700 {
+  background-color: var(--Neutral-700);
+}
+.bg-600 {
+  background-color: var(--Neutral-600);
+}
+.bg-300 {
+  background-color: var(--Neutral-300);
+}
+.bg-200 {
+  background-color: var(--Neutral-200);
+}
+
+.bg-blue-700 {
+  background-color: var(--Blue-700);
+}
+.bg-blue-500 {
+  background-color: var(--Blue-500);
+}
+.center-H {
+  justify-content: center;
+}
+
+.center-V {
+  align-items: center;
+}
+.hidden {
+  display: none !important;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.border-r {
+  border-radius: var(--border-raduis);
+}
+.hide-content > * {
+  visibility: hidden;
+}

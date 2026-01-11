@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Karla:ital,wght@0,200..800;1,200..800&family=Lilita+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url(variables.css);
+
+/* ============================/ DM Sans \============================ */
+.dm-sans-Font {
+  font-family: var(--DMS-Font);
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* ============================\ DM Sans /============================ */
+
+/* ============================/ Weights \============================ */
+
+.W-300 {
+  font-weight: 300;
+}
+
+.W-500 {
+  font-weight: 500;
+}
+
+.W-600 {
+  font-weight: 600;
+}
+.W-600i {
+  font-weight: 600i;
+}
+
+.W-700 {
+  font-weight: 700;
+}
+/* ============================\ Weights /============================ */
+
+/* ============================/ Bricolage-grotesque \============================ */
+.bricolage-grotesque-Font {
+  font-family: var(--BG-Font);
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+/* ============================\ Bricolage-grotesque /============================ */

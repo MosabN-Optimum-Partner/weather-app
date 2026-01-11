@@ -1,0 +1,12 @@
+@import url(variables.css);
+@import url(global.css);
+@import url(imports.css);
+@import url(layout.css);
+@import url(utility.css);
+
+@import url(../Other_styles/dropdown.css);
+
+@import url(../head/header.css);
+
+@import url(../main/titleSec.css);
+@import url(../main/weather.css);

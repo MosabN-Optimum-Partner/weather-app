@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="weather, live, realtime" />
+    <meta
+      name="description"
+      content="A real-time weather app that shows the data for today and week long for a specifc city"
+    />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles/Other_styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="flex row relative">
+        <img
+          src="../assets/images/logo.svg"
+          class="logo"
+          alt="weather now logo"
+        />
+        <div class="unit bg-600 flex row gap-0-5">
+          <img src="../assets/images/icon-units.svg" alt="" />
+          Units
+          <img src="../assets/images/icon-dropdown.svg" alt="" />
+        </div>
+        <div class="absolute unit-list hidden">
+          <button>Change to Imperial</button>
+          <p class="drop-label">Temperature</p>
+          <input
+            class="hidden-radio"
+            type="radio"
+            id="Celsius"
+            name="Temperature"
+            checked
+            value="celsius"
+          />
+          <label for="Celsius">Celsius (°C)</label>
+          <input
+            class="hidden-radio"
+            type="radio"
+            id="Fahrenheit"
+            name="Temperature"
+            value="fahrenheit"
+          />
+          <label for="Fahrenheit">Fahrenheit (°F)</label>
+          <div class="seperator"></div>
+          <p class="drop-label">Wind Speed</p>
+          <input
+            class="hidden-radio"
+            type="radio"
+            id="kmh"
+            name="Wind"
+            checked
+            value="kmh"
+          />
+          <label for="kmh">km/h</label>
+          <input
+            class="hidden-radio"
+            type="radio"
+            id="mph"
+            name="Wind"
+            value="mph"
+          />
+          <label for="mph">mph</label>
+          <div class="seperator"></div>
+
+          <p class="drop-label">Precipitation</p>
+          <input
+            class="hidden-radio"
+            type="radio"
+            id="Millimeters"
+            name="Precipitation"
+            checked
+            value="mm"
+          />
+          <label for="Millimeters">Millimeters (mm)</label>
+          <input
+            class="hidden-radio"
+            type="radio"
+            id="Inches"
+            name="Precipitation"
+            value="inch"
+          />
+          <label for="Inches">Inches (in)</label>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="main-title gap-2 flex center-H weather-container">
+        <h1 class="bricolage-grotesque-Font">How's the sky looking today?</h1>
+        <div class="search-wrapper flex gap-1">
+          <div class="search-area flex row gap-0-5 bg-800 border-r">
+            <img src="../assets/images/icon-search.svg" alt="search icon" />
+            <input
+              type="text"
+              name="search"
+              class="search-bar border-r"
+              placeholder="Search for a place..."
+            />
+          </div>
+          <button class="search-button bg-blue-500 border-r">Search</button>
+        </div>
+      </section>
+      <div class="container weather-container">
+        <div class="desktop-wrapper uflex gap-2">
+          <section class="weather-content">
+            <div class="weather-data gap-1 flex img-day-sm">
+              <div class="center-text city-date-wrapper hide-content">
+                <h2 class="country-city">berilin, Germany</h2>
+                <h4 class="day-date">text text</h4>
+              </div>
+              <div class="sun-weather flex row">
+                <img
+                  src="../assets/images/icon-sunny.webp"
+                  class="sun main-weather-icon"
+                  alt="sun image"
+                />
+                <span class="current-temp">68°</span>
+              </div>
+            </div>
+          </section>
+          <div class="weather-metadata grid gap-1">
+            <div class="card border-r">
+              <p class="metadata-header">Feels Like</p>
+              <p class="metadata feelsLike">-</p>
+            </div>
+            <div class="card border-r">
+              <p class="metadata-header">Humidity</p>
+              <p class="metadata humidity">-</p>
+            </div>
+            <div class="card border-r">
+              <p class="metadata-header">Wind</p>
+              <p class="metadata wind">-</p>
+            </div>
+            <div class="card border-r">
+              <p class="metadata-header">Precipitation</p>
+              <p class="metadata precipitation">-</p>
+            </div>
+          </div>
+          <section class="weather-content">
+            <h4>Daily forecast</h4>
+            <div class="week-forecast columns-3 grid gap-1">
+              <div class="card flex border-r hide-content">
+                <p>Tue</p>
+                <img
+                  src="../assets/images/icon-rain.webp"
+                  class="daily-img"
+                  alt=""
+                />
+                <div class="d-data">
+                  <p class="data">data</p>
+                  <p class="data">data</p>
+                </div>
+              </div>
+              <div class="card flex border-r hide-content">
+                <p>Tue</p>
+                <img
+                  src="../assets/images/icon-rain.webp"
+                  class="daily-img"
+                  alt=""
+                />
+                <div class="d-data">
+                  <p class="data">data</p>
+                  <p class="data">data</p>
+                </div>
+              </div>
+              <div class="card flex border-r hide-content">
+                <p>Tue</p>
+                <img
+                  src="../assets/images/icon-rain.webp"
+                  class="daily-img"
+                  alt=""
+                />
+                <div class="d-data">
+                  <p class="data">data</p>
+                  <p class="data">data</p>
+                </div>
+              </div>
+              <div class="card flex border-r hide-content">
+                <p>Tue</p>
+                <img
+                  src="../assets/images/icon-rain.webp"
+                  class="daily-img"
+                  alt=""
+                />
+                <div class="d-data">
+                  <p class="data">data</p>
+                  <p class="data">data</p>
+                </div>
+              </div>
+              <div class="card flex border-r hide-content">
+                <p>Tue</p>
+                <img
+                  src="../assets/images/icon-rain.webp"
+                  class="daily-img"
+                  alt=""
+                />
+                <div class="d-data">
+                  <p class="data">data</p>
+                  <p class="data">data</p>
+                </div>
+              </div>
+              <div class="card flex border-r hide-content">
+                <p>Tue</p>
+                <img
+                  src="../assets/images/icon-rain.webp"
+                  class="daily-img"
+                  alt=""
+                />
+                <div class="d-data">
+                  <p class="data">data</p>
+                  <p class="data">data</p>
+                </div>
+              </div>
+              <div class="card flex border-r hide-content">
+                <p>Tue</p>
+                <img
+                  src="../assets/images/icon-rain.webp"
+                  class="daily-img"
+                  alt=""
+                />
+                <div class="d-data">
+                  <p class="data">data</p>
+                  <p class="data">data</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="hourly-forecast uflex gap-1">
+          <div class="header uflex row relative">
+            <h4>hourly forecast</h4>
+            <div class="unit bg-600 flex row gap-0-5">
+              <span class="selected-day">Sunday</span>
+              <img src="../assets/images/icon-dropdown.svg" alt="" />
+            </div>
+            <div class="absolute unit-list hidden">
+              <input
+                class="hidden-radio"
+                type="radio"
+                name="Day"
+                id="Sunday"
+                value="Sunday"
+              /><label for="Sunday">Sunday</label>
+              <input
+                class="hidden-radio"
+                type="radio"
+                id="Monday"
+                name="Day"
+                value="Monday"
+              /><label for="Monday">Monday</label>
+              <input
+                class="hidden-radio"
+                type="radio"
+                id="Tuesday"
+                name="Day"
+                value="Tuesday"
+              /><label for="Tuesday">Tuesday</label>
+              <input
+                class="hidden-radio"
+                type="radio"
+                id="Wednesday"
+                name="Day"
+                value="Wednesday"
+              /><label for="Wednesday">Wednesday</label>
+              <input
+                class="hidden-radio"
+                type="radio"
+                id="Thursday"
+                name="Day"
+                value="Thursday"
+              /><label for="Thursday">Thursday</label>
+              <input
+                class="hidden-radio"
+                type="radio"
+                id="Friday"
+                name="Day"
+                value="Friday"
+              /><label for="Friday">Friday</label>
+              <input
+                class="hidden-radio"
+                type="radio"
+                id="Saturday"
+                name="Day"
+                value="Saturday"
+              /><label for="Saturday">Saturday</label>
+            </div>
+          </div>
+          <div class="hours-weather uflex">
+            <div class="hours-card uflex row hide-content">
+              <div class="uflex row gap-0-5 center-V">
+                <img src="../assets/images/icon-rain.webp" alt="" /><span
+                  >3 PM</span
+                >
+              </div>
+              <span>20</span>
+            </div>
+            <div class="hours-card uflex row hide-content">
+              <div class="uflex row gap-0-5 center-V">
+                <img src="../assets/images/icon-rain.webp" alt="" /><span
+                  >3 PM</span
+                >
+              </div>
+              <span>20</span>
+            </div>
+            <div class="hours-card uflex row hide-content">
+              <div class="uflex row gap-0-5 center-V">
+                <img src="../assets/images/icon-rain.webp" alt="" /><span
+                  >3 PM</span
+                >
+              </div>
+              <span>20</span>
+            </div>
+            <div class="hours-card uflex row hide-content">
+              <div class="uflex row gap-0-5 center-V">
+                <img src="../assets/images/icon-rain.webp" alt="" /><span
+                  >3 PM</span
+                >
+              </div>
+              <span>20</span>
+            </div>
+            <div class="hours-card uflex row hide-content">
+              <div class="uflex row gap-0-5 center-V">
+                <img src="../assets/images/icon-rain.webp" alt="" /><span
+                  >3 PM</span
+                >
+              </div>
+              <span>20</span>
+            </div>
+            <div class="hours-card uflex row hide-content">
+              <div class="uflex row gap-0-5 center-V">
+                <img src="../assets/images/icon-rain.webp" alt="" /><span
+                  >3 PM</span
+                >
+              </div>
+              <span>20</span>
+            </div>
+            <div class="hours-card uflex row hide-content">
+              <div class="uflex row gap-0-5 center-V">
+                <img src="../assets/images/icon-rain.webp" alt="" /><span
+                  >3 PM</span
+                >
+              </div>
+              <span>20</span>
+            </div>
+            <div class="hours-card uflex row hide-content">
+              <div class="uflex row gap-0-5 center-V">
+                <img src="../assets/images/icon-rain.webp" alt="" /><span
+                  >3 PM</span
+                >
+              </div>
+              <span>20</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="error-msg hidden">something went wrong</h2>
+    </main>
+    <script type="module" src="scripts/dist/dropdown.js"></script>
+    <script type="module" src="scripts/dist/fetch.js"></script>
+    <script type="module" src="scripts/dist/main.js"></script>
+    <script type="module" src="scripts/dist/render.js"></script>
+  </body>
+</html>
